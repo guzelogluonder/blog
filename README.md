@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Benim Blogum
 
-## Getting Started
+Next.js ile geliştirilen kişisel blog projesi. Yazılım, teknoloji ve öğrenilen şeyler üzerine yazılar paylaşmak için kullanılıyor.
 
-First, run the development server:
+## Özellikler
+
+- Markdown tabanlı blog yazıları (`content/posts`)
+- Yazı listesi, yazı detayı ve etikete göre filtreleme sayfaları
+- Hakkımda sayfası
+
+## Kullanılan teknolojiler
+
+- [Next.js](https://nextjs.org) (App Router)
+- [Tailwind CSS](https://tailwindcss.com)
+- [gray-matter](https://github.com/jonschlinkert/gray-matter) ve [remark](https://github.com/remarkjs/remark) — Markdown içeriğini işlemek için
+
+## Başlarken
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000) adresinden sonucu görebilirsin.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Yeni yazı ekleme
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`content/posts/` klasörüne yeni bir `.md` dosyası ekleyerek yeni bir blog yazısı oluşturabilirsin.
