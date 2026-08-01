@@ -7,12 +7,17 @@ Next.js ile geliştirilen kişisel blog projesi. Yazılım, teknoloji ve öğren
 - Markdown tabanlı blog yazıları (`content/posts`)
 - Yazı listesi, yazı detayı ve etikete göre filtreleme sayfaları
 - Hakkımda sayfası
+- Kod bloklarında syntax highlighting
+- Açık/koyu tema desteği (`prefers-color-scheme`)
+- Sayfa başına SEO metadata (dinamik yazı/etiket başlıkları dahil)
 
 ## Kullanılan teknolojiler
 
 - [Next.js](https://nextjs.org) (App Router)
-- [Tailwind CSS](https://tailwindcss.com)
-- [gray-matter](https://github.com/jonschlinkert/gray-matter) ve [remark](https://github.com/remarkjs/remark) — Markdown içeriğini işlemek için
+- [Tailwind CSS](https://tailwindcss.com) ve [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
+- [gray-matter](https://github.com/jonschlinkert/gray-matter) — Markdown frontmatter'ı ayrıştırmak için
+- [remark](https://github.com/remarkjs/remark) / [rehype](https://github.com/rehypejs/rehype) — Markdown içeriğini HTML'e çevirmek için
+- [rehype-highlight](https://github.com/rehypejs/rehype-highlight) — kod bloklarını renklendirmek için
 
 ## Başlarken
 
