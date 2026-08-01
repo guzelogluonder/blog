@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="border-b px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-10 bg-background border-b px-6 py-4 flex items-center justify-between">
       <a href="/" className="text-xl font-bold">
         Önder
       </a>
