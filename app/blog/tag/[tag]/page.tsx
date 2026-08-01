@@ -12,11 +12,11 @@ export default async function TagPage({ params }: PageProps) {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold mb-8">
-        Etiket: <span className="text-zinc-500">{tag}</span>
+        Etiket: <span className="text-zinc-500 dark:text-zinc-400">{tag}</span>
       </h1>
 
       {posts.length === 0 ? (
-        <p className="text-zinc-600">Bu etikete sahip yazı bulunamadı.</p>
+        <p className="text-zinc-600 dark:text-zinc-300">Bu etikete sahip yazı bulunamadı.</p>
       ) : (
         <ul className="space-y-6">
           {posts.map((post) => (

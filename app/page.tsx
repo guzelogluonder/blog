@@ -6,7 +6,7 @@ export default function Home() {
       <h1 className="text-4xl sm:text-5xl font-bold mb-4">
         Merhaba, ben <span className="text-indigo-600">Önder</span>
       </h1>
-      <p className="text-lg text-zinc-600 max-w-xl mb-8">
+      <p className="text-lg text-zinc-600 dark:text-zinc-300 max-w-xl mb-8">
         Bu benim kişisel blogum. Burada yazılım, teknoloji ve öğrendiğim
         şeyler hakkında yazılar paylaşacağım.
       </p>

@@ -9,7 +9,7 @@ export default function Blog() {
       <h1 className="text-3xl font-bold mb-8">Yazılar</h1>
 
       {posts.length === 0 ? (
-        <p className="text-zinc-600">Henüz yazı yok.</p>
+        <p className="text-zinc-600 dark:text-zinc-300">Henüz yazı yok.</p>
       ) : (
         <ul className="space-y-6">
           {posts.map((post) => (
