@@ -10,7 +10,7 @@ export default function PostCard({ post }: PostCardProps) {
     <li className="border-b pb-4">
       <Link
         href={`/blog/${post.slug}`}
-        className="text-xl font-semibold hover:underline"
+        className="text-xl font-semibold hover:text-indigo-600 hover:underline"
       >
         {post.title}
       </Link>
@@ -22,7 +22,7 @@ export default function PostCard({ post }: PostCardProps) {
             <Link
               key={tag}
               href={`/blog/tag/${tag}`}
-              className="text-xs bg-zinc-100 text-zinc-600 px-2 py-1 rounded-full hover:bg-zinc-200"
+              className="text-xs bg-indigo-50 text-indigo-600 px-2 py-1 rounded-full hover:bg-indigo-100"
             >
               {tag}
             </Link>

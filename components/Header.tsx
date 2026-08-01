@@ -5,9 +5,9 @@ export default function Header() {
         Önder
       </a>
       <nav className="flex gap-4 text-sm">
-        <a href="/" className="hover:underline">Ana Sayfa</a>
-        <a href="/blog" className="hover:underline">Blog</a>
-        <a href="/hakkimda" className="hover:underline">Hakkımda</a>
+        <a href="/" className="hover:text-indigo-600 hover:underline">Ana Sayfa</a>
+        <a href="/blog" className="hover:text-indigo-600 hover:underline">Blog</a>
+        <a href="/hakkimda" className="hover:text-indigo-600 hover:underline">Hakkımda</a>
       </nav>
     </header>
   );

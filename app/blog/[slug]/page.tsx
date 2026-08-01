@@ -20,7 +20,7 @@ export default async function BlogPost({ params }: PageProps) {
 
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
-      <Link href="/blog" className="text-sm text-zinc-500 hover:underline">
+      <Link href="/blog" className="text-sm text-zinc-500 hover:text-indigo-600 hover:underline">
         ← Tüm yazılar
       </Link>
       <h1 className="text-3xl font-bold mt-4 mb-2">{post.title}</h1>
