@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
+
+export const metadata: Metadata = {
+  title: "Yazılar",
+  description: "Yazılım, teknoloji ve öğrenilenler üzerine tüm blog yazıları.",
+};
 
 export default function Blog() {
   const posts = getAllPosts();

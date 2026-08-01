@@ -7,7 +7,10 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Benim Blogum",
+  title: {
+    default: "Benim Blogum",
+    template: "%s | Benim Blogum",
+  },
   description: "Yazılım ve teknoloji üzerine kişisel blog",
 };
 

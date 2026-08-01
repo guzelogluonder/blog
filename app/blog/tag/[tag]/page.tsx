@@ -1,8 +1,17 @@
+import type { Metadata } from "next";
 import { getPostsByTag } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
 
 interface PageProps {
   params: Promise<{ tag: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { tag } = await params;
+  return {
+    title: `#${tag} etiketi`,
+    description: `${tag} etiketine sahip blog yazıları.`,
+  };
 }
 
 export default async function TagPage({ params }: PageProps) {

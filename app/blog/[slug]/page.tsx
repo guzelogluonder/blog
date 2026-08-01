@@ -1,9 +1,24 @@
+import type { Metadata } from "next";
 import { getPostBySlug, getAllPosts } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const postMeta = getAllPosts().find((post) => post.slug === slug);
+
+  if (!postMeta) {
+    return { title: "Yazı bulunamadı" };
+  }
+
+  return {
+    title: postMeta.title,
+    description: postMeta.excerpt,
+  };
 }
 
 export default async function BlogPost({ params }: PageProps) {

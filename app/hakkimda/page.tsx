@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hakkımda",
+  description: "Backend geliştiricisi Önder hakkında kısa bilgi.",
+};
+
 export default function Hakkimda() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
