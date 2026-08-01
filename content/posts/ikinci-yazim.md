@@ -13,6 +13,19 @@ Next.js ile çalışmaya başlayalı birkaç gün oldu. Backend tarafında Sprin
 - React component mantığı, Spring'deki servis katmanına benzese de state yönetimi yeni bir kavram
 - TypeScript, Java'dan gelen biri için oldukça rahat
 
+Örneğin bir sayfa bileşeni bu kadar basit görünebiliyor:
+
+```tsx
+interface PostMeta {
+  slug: string;
+  title: string;
+}
+
+export default function PostCard({ post }: { post: PostMeta }) {
+  return <h2>{post.title}</h2>;
+}
+```
+
 <iframe
   width="100%"
   height="400"
