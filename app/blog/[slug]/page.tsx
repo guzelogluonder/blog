@@ -1,5 +1,6 @@
 import { getPostBySlug, getAllPosts } from "@/lib/posts";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -19,7 +20,10 @@ export default async function BlogPost({ params }: PageProps) {
 
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold mb-2">{post.title}</h1>
+      <Link href="/blog" className="text-sm text-zinc-500 hover:underline">
+        ← Tüm yazılar
+      </Link>
+      <h1 className="text-3xl font-bold mt-4 mb-2">{post.title}</h1>
       <p className="text-sm text-zinc-500 mb-8">{post.date}</p>
       <article
         className="prose prose-zinc"
