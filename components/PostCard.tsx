@@ -7,7 +7,7 @@ interface PostCardProps {
 
 export default function PostCard({ post }: PostCardProps) {
   return (
-    <li className="border-b pb-4">
+    <li className="border border-zinc-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-indigo-200 transition-shadow duration-200">
       <Link
         href={`/blog/${post.slug}`}
         className="text-xl font-semibold hover:text-indigo-600 hover:underline"
